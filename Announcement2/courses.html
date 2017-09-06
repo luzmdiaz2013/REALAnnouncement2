@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="Announcement2.css">
+	<title></title>
+</head>
+<body>
+
+<div id="container"></div>
+<nav> 
+		<a href="index.html">Home</a>
+        <a href="Learn.html">Learn</a>
+        <a href="Participate.html">Participate</a>
+</nav>
+<!-- <div id="nav"></div> -->
+<div class="sections" >
+			<img  src="images/slide_flipboard.png" class="mySlides">
+			<img  src="images/slide_flipkart.png" class="mySlides">
+			<img  src="images/slide_twittermobile.png" class="mySlides">
+			<img  src="images/slideFinTimes.jpg" class="mySlides">
+			<img  src="images/slideWaPo.png" class="mySlides">
+
+			<br>
+			<br>
+			<input class="forwardButton" type="button" value="+" onclick="plusDivs(1)">
+			<input class="backButton" type="button" value="-" onclick="plusDivs(-1)">
+			
+
+		<script type="text/javascript">
+			
+			var slideIndex = 1;
+			showDivs(slideIndex);
+
+			
+
+			function plusDivs(n) {
+				showDivs(slideIndex += n);
+
+			}
+			
+
+			function showDivs(n) {
+
+				var i;
+				var x = document.getElementsByClassName('mySlides');
+				if (n > x.length) {slideIndex = 1}
+				if (n < 1) {slideIndex = x.length}
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+				}
+
+				x[slideIndex - 1].style.display = "block";
+
+			}
+
+			</script>
+
+</div>
+
+<div class="sections" ></div>
+<div class="sections" id="footer"></div>
+</body>
+</html>

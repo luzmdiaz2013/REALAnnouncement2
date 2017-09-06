@@ -1,0 +1,255 @@
+*margin:0;
+body{
+	background-color: #f3f0f0;
+	/*#4caf50 green
+	#4285f4 blue 
+	#f3f0f0 whitesmoke
+	#455a64 slate grey*/
+}
+
+.sections{
+	/*background-color: orange;*/
+	height: 500px;
+	width:100%;
+	border: 10px; 
+	border-color: solid black;
+
+}
+/*#body{}
+#container{}*/
+
+#announcement{
+	background-color: #f3f0f0;
+
+}
+#slideshowContainer{
+
+	background-color: #4285f4;
+	height: 500px;
+	width:100%;
+}
+#slideshow{
+	height: 450px;
+	/*width: 650px;*/
+	/*background-color: blue;
+*/	/*margin: 10px;*/
+	padding: 15px;
+
+}
+
+#footer{
+	background-color: #4caf50;
+	height: 300px;
+	display:flex;
+	padding: 15px;
+
+}
+
+#social{
+	flex:1;
+    height: auto;
+    width: 200px;
+}
+
+#contact{
+	flex:1;
+    height: auto;
+    width: 200px;
+}
+
+
+
+nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #455a64;
+	overflow: hidden;
+	font-family: 'Droid Serif', serif;
+	font-family: 'Quicksand', sans-serif;
+	opacity: .7;
+	box-shadow: 0px 5px 5px #888888;
+	margin-bottom: 25px;
+	position: fixed;
+	width: 100%;
+
+}
+ 
+nav li{
+	float: left;
+
+}
+
+nav li a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 15px 15px;
+	text-decoration: none;
+}
+nav li a:hover{
+	font-size: 30px;
+	color: green;
+	border:2px;
+}
+
+
+/*nav {
+	height:  80px;
+	width: 100%;
+	background-color: #455a64;
+	position: fixed;
+	font-size: 20px;
+	color: green;
+	font-family: 'Droid Serif', serif;
+	font-family: 'Quicksand', sans-serif;
+	opacity: .7;
+	box-shadow: 0px 5px 5px #888888;
+	margin-bottom: 25px;
+
+}
+nav:hover{
+	font-size: 30px;
+	color: green;
+	border:2px;
+}*/
+
+h1{
+	font-family: 'Droid Serif', serif;
+	font-family: 'Quicksand', sans-serif;
+	
+
+}
+h2{
+	font-family: 'Droid Serif', serif;
+	font-family: 'Quicksand', sans-serif;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+.paragraph{
+	height: 450;
+	width: 500px;
+	/*background-color: pink;*/
+	/*margin: 10px;*/
+	padding: 15px;
+	font-family: 'Droid Serif', serif;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+}
+.mySlides{
+	height: 400px
+	width:auto;
+	background-color: yellow;
+}
+
+.forwardButton{
+			width: 50px;
+			height: 35px;
+			border-radius: 10px;
+			font-weight: bolder;
+			font-size: 25px;
+			/*background-color: 05C1FF;*/
+			border-color: 2D77CC;
+			/*background-image: linear-gradient(to right, #ffff00 0%, #2D77CC 50%, #ffff00 100%);*/
+			background-image: radial-gradient(ellipse farthest-corner at center, #a7cfdf 0%, #23538a 100%);
+			margin-left: 20px;
+		}
+
+.backButton{
+			width: 50px;
+			height: 35px;
+			border-radius: 10px;
+			font-weight: bolder;
+			font-size: 25px;
+			/*background-color: 05C1FF;*/
+			border-color: 2D77CC;
+			/*background-image: linear-gradient(to right, #ffff00 0%, #2D77CC 50%, #ffff00 100%);*/
+			background-image: radial-gradient(ellipse farthest-corner at center, #a7cfdf 0%, #23538a 100%);
+			margin-right: 20px;
+		}
+
+#modalPic{
+margin-top: 25px;
+}
+
+.modalDialog {
+      position: fixed;
+      font-family: Arial, Helvetica, sans-serif;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba(0,0,0,0.8);
+      z-index: 99999;
+      opacity:0;
+      -webkit-transition: opacity 400ms ease-in;
+      -moz-transition: opacity 400ms ease-in;
+      transition: opacity 400ms ease-in;
+      pointer-events: none;
+      }
+
+      .modalDialog:target {
+        opacity:1;
+        pointer-events: auto;
+      }
+
+      .modalDialog > div {
+      width: 800px;
+      height: auto;
+      position: relative;
+      margin: 10% auto;
+      padding: 5px 20px 13px 20px;
+      border-radius: 10px;
+      background: #fff;
+      background: -moz-linear-gradient(#fff, #999);
+      background: -webkit-linear-gradient(#fff, #999);
+      background: -o-linear-gradient(#fff, #999);
+      }
+
+      .close {
+      background: #606061;
+      color: #FFFFFF;
+      line-height: 25px;
+      position: absolute;
+      right: -12px;
+      text-align: center;
+      top: -10px;
+      width: 24px;
+      text-decoration: none;
+      font-weight: bold;
+      -webkit-border-radius: 12px;
+      -moz-border-radius: 12px;
+      border-radius: 12px;
+      -moz-box-shadow: 1px 1px 3px #000;
+      -webkit-box-shadow: 1px 1px 3px #000;
+      box-shadow: 1px 1px 3px #000;
+      }
+
+.close:hover { background: #00d9ff; }
+
+#learn{
+	display: flex;
+
+}
+
+.learn{
+	margin: 20px;
+	margin-top: 50px; 
+}
+
+#https{
+	flex: 1;
+}
+
+#optimize{
+	flex: 1;
+}
+
+#responsive{
+	flex: 1;
+}

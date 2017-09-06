@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- ////////////////////////////// This is the link to the css /////////////////////////////////// -->
+
+	<link rel="stylesheet" type="text/css" href="Announcement2.css">
+	<title></title>
+
+<!-- /////////////////////////////// This is the link for the font ////////////////////////////// -->
+
+	<link href="https://fonts.googleapis.com/css?family=Droid+Serif|Quicksand" rel="stylesheet">
+
+</head>
+<body>
+<!-- //////////////////////////////// This is the parent container  /////////////////////////////////-->
+<!-- <div id="container"></div> -->
+
+<!-- /////////////////////////////// This is the nav bar //////////////////////////////////////////// -->	
+<div id="navDiv">
+
+		<nav> 
+			<ul>
+				<li><a href="index-Announcement2.html">Home</a></li>
+		        <li><a href="learn.html">Learn</a></li>
+		        <li><a href="participate.html">Participate</a></li>
+		    </ul>
+		</nav>
+
+	</div>
+		<br>
+		<br>
+		<br>
+<!-- //////////////////////////// This is the Announcement paragraph container ////////////////////// -->
+
+<div class="sections" id="announcement">
+	<center>
+	<h1>Progressive Web Apps Workshop </h1>
+	<h1>October 23 and 24th</h1>
+	<!-- <br> -->
+	<a href="https://generalassemb.ly/?&where=new-york-city&topic=&mkt_account_id=5259582058&mkt_campaign_id=886991751&mkt_ad_group_id=46940945720&mkt_device_type=c&mkt_keyword=general%20assembly%20nyc&mkt_matchtype=e&mkt_placement=&mkt_ad_id=207901728459&mkt_network=g&mkt_target_id=kwd-300765786177&mkt_feed_item_id=&utm_source=google&utm_medium=cpcb&utm_campaign={campaign}&utm_content=campus-lead-lander&utm_term=general%20assembly%20nyc"><h2>Join us at General Assembly in New York</h2></a> 
+	<br>
+		<div class="paragraph">
+
+				<!-- <center> -->
+					<p>
+						<ul>
+						Progressive Web Apps are user experiences that have the reach of the web, and are:
+
+
+						<br>
+
+								<li>Reliable - Load instantly and never show the downasaur, even in uncertain network conditions.</li>
+
+								<li>Fast - Respond quickly to user interactions with silky smooth animations and no janky scrolling.</li>
+
+								<li>Engaging - Feel like a natural app on the device, with an immersive user experience.</li>
+
+						<br>
+						
+						This new level of quality allows Progressive Web Apps to earn a place on the user's home screen.
+						</ul>
+
+					</p>
+
+				
+				<!-- </center> -->
+
+			</div>
+</div>
+
+<!-- ////////////////////////////// This is the slideshow container///////////////////////////////// -->
+
+<div class="sections" id="slideshowContainer">
+	<center>
+	<a href="#openModal" id="modalPic"><img  src="images/slide_flipboard.png"a>
+	</center>
+	
+	<div id="openModal" class="modalDialog">	
+		
+		<a href="#close" title="Close" class="close">X</a>
+
+		<div id="slideshow">
+
+		
+
+			<center>
+
+			<!-- //////////// Images for Slideshow/////////////////// -->
+			 
+			<img  src="images/slide_flipboard.png" class="mySlides">
+			<img  src="images/slide_flipkart.png" class="mySlides">
+			<img  src="images/slide_twittermobile.png" class="mySlides">
+			<img  src="images/slideFinTimes.jpg" class="mySlides">
+			<img  src="images/slideWaPo.png" class="mySlides">
+
+			<br>
+			
+
+			<!-- ///////////////////// Buttons for slideshow //////////////// -->
+			
+			<input class="backButton" type="button" value="<" onclick="plusDivs(-1)">
+			<input class="forwardButton" type="button" value=">" onclick="plusDivs(1)">
+
+			</center>
+			
+<!-- ///////////////////////// This is the javascript functions for the slide show/////////////////// -->
+		<script type="text/javascript">
+			
+			var slideIndex = 1;
+			showDivs(slideIndex);
+
+			
+
+			function plusDivs(n) {
+				showDivs(slideIndex += n);
+
+			}
+			
+
+			function showDivs(n) {
+
+				var i;
+				var x = document.getElementsByClassName('mySlides');
+				if (n > x.length) {slideIndex = 1}
+				if (n < 1) {slideIndex = x.length}
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+				}
+
+				x[slideIndex - 1].style.display = "block";
+
+			}
+
+			</script>
+
+			
+
+		</div>
+
+	</div>
+
+</div>
+
+<!-- ///////////////////////////////// This is the footer////////////////////////////////// -->
+
+<div class="sections" id="footer">
+	
+	<div class="footerSub" id="social">
+		            
+		<!-- <h3>CONNECT</h3> -->
+	          <center>
+		            <br>
+		            <br>
+
+	              <table>
+
+	                  <tr><td><a href="https://www.facebook.com/"><img src="images/facebooklogo.png"></a></td>
+	                  
+	                  <td><a href="https://twitter.com/?lang=en"><img src="images/twitterlogo.png"></a></td>
+	                  
+	                  <td><a href="https://www.instagram.com/?hl=en"><img src="images/instagramlogo.png"></a></td>
+
+	                  <td><a href="https://www.instagram.com/?hl=en"><img src="images/socialChromium.png"></a></td></tr>
+	             
+	              </table>
+
+              </center>
+	</div>
+
+	<div class="footerSub" id="contact">
+          <!-- <h3>CONTACT US</h3> -->
+            <div>
+            <center>        
+                 <a href="https://generalassemb.ly/?&where=new-york-city&topic=&mkt_account_id=5259582058&mkt_campaign_id=886991751&mkt_ad_group_id=46940945720&mkt_device_type=c&mkt_keyword=general%20assembly%20nyc&mkt_matchtype=e&mkt_placement=&mkt_ad_id=207901728459&mkt_network=g&mkt_target_id=kwd-300765786177&mkt_feed_item_id=&utm_source=google&utm_medium=cpcb&utm_campaign={campaign}&utm_content=campus-lead-lander&utm_term=general%20assembly%20nyc"><img src="images/general-assembly-logo.png"></a>  
+              <p>
+                10 East 21st Street
+                <br>
+                New York, New York 11238-6052
+                <br>
+                <br>
+                TELEPHONE
+                <br>
+                917.722.0237
+                <br>
+                <br>
+                EMAIL
+                <br>
+                <a href="https://generalassemb.ly/?&where=new-york-city&topic=&mkt_account_id=5259582058&mkt_campaign_id=886991751&mkt_ad_group_id=46940945720&mkt_device_type=c&mkt_keyword=general%20assembly%20nyc&mkt_matchtype=e&mkt_placement=&mkt_ad_id=207901728459&mkt_network=g&mkt_target_id=kwd-300765786177&mkt_feed_item_id=&utm_source=google&utm_medium=cpcb&utm_campaign={campaign}&utm_content=campus-lead-lander&utm_term=general%20assembly%20nyc">hello@generalassemb.ly</a>
+
+              </p>
+
+              </center> 
+</div>
+
+</body>
+</html>
